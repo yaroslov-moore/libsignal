@@ -1,4 +1,8 @@
 {
+  "author": "Yaroslov Moore",
+  "bugs": {
+    "url": "https://github.com/yaroslov-moore/libsignal/issues"
+  },
   "dependencies": {
     "@signalapp/libsignal-client": "^0.21.0",
     "@sindresorhus/is": "0.8.0",
@@ -16,6 +20,7 @@
     "websocket": "1.0.28",
     "zod": "^3.19.1"
   },
+  "description": "",
   "devDependencies": {
     "@types/lodash": "^4.14.186",
     "@types/node-fetch": "^2.6.2",
@@ -25,8 +30,19 @@
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
   },
+  "homepage": "https://github.com/yaroslov-moore/libsignal#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@avtar.kuldipsingh/libsignal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslov-moore/libsignal.git"
+  },
   "scripts": {
     "build": "tsc -b",
-    "format": "prettier --write '**/*.{d.ts,json,md,ts}' '!node_modules/**'"
-  }
+    "format": "prettier --write '**/*.{json,md,ts}' '!node_modules/**' '!**/*.d.ts'",
+    "prepublish": "npm run build"
+  },
+  "types": "index.d.ts",
+  "version": "1.0.0"
 }

@@ -1,3 +1,8 @@
+*.d.ts
+!protobuf/compiled.d.ts
+!**/*/Types.d.ts
+!types/Storage.d.ts
+!types/runtime.d.ts
 *.js
 !*.config.js
 !protobuf/compiled.js
