@@ -1,3 +1,7 @@
+*.js
+!*.config.js
+!protobuf/compiled.js
+
 # Logs
 logs
 *.log
